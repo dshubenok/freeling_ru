@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 
-file1 = '1.txt'
-file2 = '2.txt'
+file1 = 'gold.txt'
+file2 = 'freeling.txt'
 
 #вес правильно разобранной леммы
 weight = 0.5
