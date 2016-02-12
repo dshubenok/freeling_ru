@@ -19,4 +19,4 @@ with open('texts.txt', 'w') as f:
         print i
         root = etree.parse(i)
         for s in root.iterfind('.//se'):
-            f.write(' '.join([word[-1].tail.encode('utf-8').replace('`', '') for word in s.iterfind('.//w')]) + '\n')
+            f.write(' '.join([word[-1].tail.encode('utf-8').replace('`', '') + s[i].tail.encode('utf-8').strip() if s[i].tail else '' for i, word in enumerate(s.iterfind('.//w'))]) + '\n')
