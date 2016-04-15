@@ -9,6 +9,7 @@ with open(file1) as f1, open(file2) as f2:
     #читаем построчно
     line1 = f1.readline()
     line2 = f2.readline()
+    lemma = pos = 0.0 # устанавливаем начальные значения
     while line1 and line2:
         str1 = line1.split(' ')
         str2 = line2.split(' ') # делим строки на три части
