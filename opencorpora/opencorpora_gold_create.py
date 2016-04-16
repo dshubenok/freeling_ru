@@ -1,4 +1,4 @@
-# скрипт создает золотой стандарт, очищенный от пунктуации (PNKT) и неопределенных тегов (UNKN)
+# скрипт создает золотой стандарт, очищенный от пунктуации (PNKT) и отсутствующих разборов (UNKN)
 import opencorpora
 
 corpus = opencorpora.CorpusReader('annot.opcorpora.no_ambig.xml')
