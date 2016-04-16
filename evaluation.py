@@ -1,5 +1,11 @@
-file1 = 'texts.txt'
-file2 = 'convert_out.txt'
+#!/usr/bin/python
+# coding: utf-8
+
+
+import sys
+
+file1 = sys.argv[1]
+file2 = sys.argv[2]
 
 f = lambda s: s.strip().replace('=', ',').split(',') # функция приходит теги к нужному виду
 
