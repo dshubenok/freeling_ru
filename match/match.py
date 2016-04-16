@@ -14,5 +14,3 @@ with open(file1) as f1, open(file2) as f2:
 
         line1 = f1.readline()
         line2 = f2.readline()
-
-print ('-'*25, '\ncount - ', c)
