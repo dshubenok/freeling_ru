@@ -69,7 +69,7 @@ for line in res.readlines(): #читаем построчно, делим
         break
 
     try:
-        tag_freeling = pos_dict[tag_separated[0]] 
+        tag_freeling = pos_dict[tag_separated[0]]  #конвертируем часть речи
         # print(tag_separated[0], '=>', tag_freeling)
     except:
         print('Что-то не так.')
